@@ -28,9 +28,9 @@ We've also added some handy features which will help you to control reactivity w
 
 ## Why?
 
-When we were building the [kadira.io](https://kaidra.io) at first, we've no idea how to architect a Meteor app. After working with almost 1.5 years, we released we are doing it wrong. 
+When we were building the [kadira.io](https://kaidra.io) at first, we've no idea how to architect a Meteor app. After working with almost 1.5 years, we realised we are doing it wrong. 
 
-So, we think a lot and played with a lot of UI frameworks and concepts. That includes [React](http://facebook.github.io/react/) and [Flux](https://facebook.github.io/flux/). After a lot of iterations and experiments, Flow Components is our component framework which is a part of the Flow Architecture for Meteor.
+So, we thought a lot and played with a lot of UI frameworks and concepts. That includes [React](http://facebook.github.io/react/) and [Flux](https://facebook.github.io/flux/). After a lot of iterations and experiments, Flow Components is our component framework which is a part of the Flow Architecture for Meteor.
 
 ## Getting Started
 
@@ -58,7 +58,7 @@ var component = FlowComponents.define('hello-component', function(props) {
 
 component.prototype.setRandomGreeting = function() {
   var greetings = ["awesome", "nice", "cool", "kind"];
-  var randomGreeting = messages[Math.floor(messages.length * Math.random())];
+  var randomGreeting = greetings[Math.floor(messages.length * Math.random())];
   this.set("greeting", randomGreeting)
 };
 
